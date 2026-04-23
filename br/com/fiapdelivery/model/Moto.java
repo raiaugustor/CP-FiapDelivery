@@ -1,11 +1,11 @@
 package br.com.fiapdelivery.model;
 
-public class moto extends Veiculo {
+public class Moto extends Veiculo {
     private boolean bau;
 
-    public moto(String placa, double capacidade, boolean bau) {
+    public Moto(String placa, double capacidade, boolean bau) {
         super(placa, capacidade);
-        this.setBau(bau);
+        this.bau = bau;
     }
     public boolean getBau() {
         return this.bau;

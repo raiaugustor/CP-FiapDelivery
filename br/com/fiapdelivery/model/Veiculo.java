@@ -4,12 +4,9 @@ public class Veiculo{
     private String placa;
     private double capacidade;
 
-    public veiculo(String placa, double capacidade) {
+    public Veiculo(String placa, double capacidade){
         this.setPlaca(placa);
-
-        public String getPlaca() {
-            return this.Placa;
-        }
+        this.setCapacidade(capacidade);
     }
 
     public String getPlaca() {
@@ -17,7 +14,12 @@ public class Veiculo{
     }
 
     private void setPlaca(String placa) {
-        this.placa = placa;
+        if (placa != null && placa.length() == 7) {
+            this.placa = placa; // Agora sim! 'this.placa' é o atributo da classe.
+        } else {
+            System.out.println("ERRO: Placa inválida!");
+            this.placa = "ERRO-00";
+        }
     }
 
     public double getCapacidade() {
@@ -27,4 +29,5 @@ public class Veiculo{
     private void setCapacidade( double capacidade) {
         this.capacidade = capacidade;
     }
+
 }
