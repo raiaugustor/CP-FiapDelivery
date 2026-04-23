@@ -4,6 +4,14 @@ public class Veiculo{
     private String placa;
     private double capacidade;
 
+    public veiculo(String placa, double capacidade) {
+        this.setPlaca(placa);
+
+        public String getPlaca() {
+            return this.Placa;
+        }
+    }
+
     public String getPlaca() {
         return this.placa;
     }
